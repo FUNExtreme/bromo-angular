@@ -1,0 +1,11 @@
+<div class="input-group">
+    <span *ngIf="prefix" class="input-group-addon">{{ prefix }}</span>
+    <input
+        [type]="type ? type : 'text'"
+        class="form-control"
+        [placeholder]="placeholder"
+        autocomplete="off"
+        [readonly]="readonly"
+        ngDefaultControl />
+    <span *ngIf="suffix" class="input-group-addon">{{ suffix }}</span>
+</div>
