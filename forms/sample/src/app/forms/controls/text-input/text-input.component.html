@@ -1,0 +1,11 @@
+<div class="bromo-control-group">
+    <span *ngIf="prefix" class="bromo-control-group-addon">{{ prefix }}</span>
+    <input
+        [type]="type ? type : 'text'"
+        class="form-control"
+        [placeholder]="placeholder"
+        autocomplete="off"
+        [readonly]="readonly"
+        ngDefaultControl />
+    <span *ngIf="suffix" class="bromo-control-group-addon">{{ suffix }}</span>
+</div>
